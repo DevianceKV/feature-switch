@@ -4,7 +4,7 @@ include "Service\FeatureStatus.php";
 
 use App\Service\FeatureStatus;
 
-$featureStatus = new FeatureStatus();
+$featureStatus = new FeatureStatus("Config/features.ini");
 
 $all = $featureStatus->getAllFeatures();
 print_r("All features:\n");
