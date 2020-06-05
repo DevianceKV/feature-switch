@@ -13,6 +13,7 @@ A simple service that provides status (enabled or disabled) of features used.
 ## How to use it?
 * Clone the project.
 * Navigate to root folder in your console.
+* Run ```composer install``` command.
 * Run ```php -f features-script.php``` command. (After this step, results of first three methods will be shown in console.)
 * To check the status of a single feature type features name in console.
 * To terminate program press Ctrl-C.
