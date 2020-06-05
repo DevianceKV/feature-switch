@@ -1,10 +1,13 @@
 <?php
 
-include "Service\FeatureStatus.php";
+require 'vendor/autoload.php';
+require 'Service\FeatureStatus.php';
 
 use App\Service\FeatureStatus;
 
-$featureStatus = new FeatureStatus("Config/features.ini");
+// PHP-DI containers.
+$container = new DI\Container();
+$featureStatus = $container->get(FeatureStatus::class);
 
 $all = $featureStatus->getAllFeatures();
 print_r("All features:\n");

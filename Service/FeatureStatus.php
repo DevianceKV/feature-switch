@@ -8,8 +8,8 @@ class FeatureStatus
 
     // Loading all features from features.ini file.
     // Path should be changed when implementing.
-    function __construct($file) {
-        $this->features = parse_ini_file($file);
+    function __construct() {
+        $this->features = parse_ini_file("Config/features.ini");
     }
 
     // Returning array of features where key is a feature name
